@@ -1,0 +1,18 @@
+{
+  "name": "iflixclone",
+  "version": "1.0.0",
+  "description": "clone of iflix",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildTailwind": "npx tailwindcss -i ./src/tailwind/tailwind.css -o ./dist/styles/styles.css"
+  },
+  "author": "rapRy",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.3.4",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.15",
+    "typescript": "^4.4.3"
+  }
+}
