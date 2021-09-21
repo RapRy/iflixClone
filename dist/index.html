@@ -8,22 +8,62 @@
     <title>Iflix Clone</title>
   </head>
   <body>
-    <main id="mainContainer" class="container">
+    <main id="mainContainer">
       <!-- site header -->
       <header>
         <!-- mobile header -->
-        <section class="grid grid-cols-2 gap-4 items-center p-2">
+        <!-- <section class="grid grid-cols-2 gap-4 items-center p-2"> -->
+        <section class="flex flex-row justify-between items-center py-3 px-5">
           <div>
-            <img class="w-24" src="./assets/iflix_logo.png" alt="iflix" />
+            <a href="#" alt="logo link">
+              <img class="w-16" src="./assets/iflix_logo.png" alt="iflix" />
+            </a>
           </div>
-          <div class="flex flex-row justify-between">
-            <span>English</span>
-            <button>OPEN APP</button>
+          <div class="flex flex-row items-center">
+            <span
+              id="langSelector"
+              class="
+                mr-4
+                text-sm
+                font-sans
+                text-black
+                font-semibold
+                cursor-pointer
+              "
+              >English</span
+            >
+            <button
+              id="openAppBtn"
+              class="
+                cursor-pointer
+                mr-4
+                py-0.5
+                px-2
+                font-semibold
+                text-primaryMain
+                font-sans
+                text-base
+                border-2 border-primaryMain
+                hover:text-red-700 hover:border-red-700
+              "
+            >
+              OPEN APP
+            </button>
             <!-- user icon -->
-            <div>
+            <div
+              id="accountBtn"
+              class="
+                bg-primaryMain
+                rounded-full
+                inline-block
+                w-8
+                h-8
+                cursor-pointer
+              "
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
+                class="h-6 w-6 mt-1 ml-1 userIconStrokeColor"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -38,11 +78,16 @@
             </div>
             <!-- user icon end -->
           </div>
-          <nav class="navigation"></nav>
         </section>
+        <nav class="navigation"></nav>
         <!-- end mobile header -->
       </header>
       <!-- end site header -->
+
+      <!-- menu start -->
+      <div id="genreCont"></div>
+      <!-- menu end -->
     </main>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
